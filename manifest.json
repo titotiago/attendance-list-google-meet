@@ -1,0 +1,17 @@
+{
+    "name":"Script Chamada",
+    "version": "1.0",
+    "description": "Envia uma mensagem de texto no chat quando detecta 4 repetições de mensagem",
+    "content_scripts": [
+        {
+            "matches": ["https://meet.google.com/*"],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup":"index.html"
+    },
+    "manifest_version": 3
+}
